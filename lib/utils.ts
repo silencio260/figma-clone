@@ -2,6 +2,7 @@ import jsPDF from "jspdf";
 import { twMerge } from "tailwind-merge";
 import { type ClassValue, clsx } from "clsx";
 
+
 const adjectives = [
   "Happy",
   "Creative",
@@ -116,6 +117,6 @@ export const exportToPdf = () => {
   // add the image to the pdf
   doc.addImage(data, "PNG", 0, 0, canvas.width, canvas.height);
 
-  // download the pdf
+  // // download the pdf
   doc.save("canvas.pdf");
 };
